@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NIT Warangal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .div1{
+            display: flex;
+            width:100%;
+            height:50px;
+            background-color: rgb(13, 13, 130);
+            justify-content: space-around;
+            align-items: center;
+            color:rgb(228, 225, 225);
+        }
+        .div2{
+            display: flex;
+            width: 100%;
+            height:110px;
+            background-color: white;
+            justify-content: center;
+            align-items: center;
+        }
+        .div3{
+            height: 90px;
+            width:100%;
+            background-color: white;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .n1{
+            color:rgb(21, 21, 174);
+        }
+        .ph{
+            width:50%;
+            height:90%;
+            background-image: url("NITW_logo.png");
+            background-size: cover;
+        }
+        .div11{
+            font-size: 1.2rem;
+        }
+        .div12{
+            display: flex;
+            justify-content: space-around;
+            width:30%;
+        }
+        .l{
+            height:25px;
+            width:25px;
+            border-radius: 50%;
+            background-color: pink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .l1{
+            background-color: blue;
+        }
+        .l2{
+            background-color: rgb(101, 181, 208);
+        }
+        .l3{
+            background-color: white;
+            color:red;
+        }
+        .l4{
+            background-color: white;
+            color:grey
+        }
+        .l5{
+            color:white;
+            background: linear-gradient(45deg,violet,red,yellow);
+        }
+        .l6,.l7{
+            height: 25px;
+            width: 30px;
+            border-radius: 50%;
+            border: solid 2px white;
+            background-color: rgb(13, 13, 130);
+            color: white;
+        }
+        .l8{
+            width: 45px;
+            background-color: rgb(13, 13, 130);
+            border:solid 2px white;
+            border-radius: 16px;
+        }
+        .gl{
+            color:rgb(106, 9, 9);
+        }
+        .n8,.n9{
+            height: 80%;
+            width:10%;
+        }
+        .n8{
+            background-image: url("g-20-logo.png");
+            background-size: cover;
+        }
+        .n9{
+            background-image: url("logo-black.png");
+            background-size: cover;
+        }
+        .sep{
+            height:10px;
+            width: 100%;
+            background-color: rgb(13, 13, 130);
+        }
+        .sep1{
+            height:5px;
+            width: 100%;
+            background-color: rgb(13, 13, 130);
+        }
+        .slide{
+            height:450px;
+            width: 100%;
+            background-image: url("welcome_to_NIT_WARANGAL_2023-4-15-16-35-49.jpg");
+            background-size: cover;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .b1,.b2{
+            height:30px;
+            width:30px;
+            border-radius: 50%;
+            background-color: rgb(220, 217, 217);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            height:30px;
+            width:30px;
+            border:none;
+            border-radius: 50%;
+            background-color: transparent;
+        }
+        marquee a{
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: rgb(232, 183, 91);
+        }
+        .dm{
+            height:250px;
+            width: 100%;
+            display: flex;
+            
+        }
+        .m{
+            width:70%;
+            height:100%;
+            font-size: 5rem;
+            color:rgb(13, 13, 130);
+            display: flex;
+            justify-content: center;
+            text-decoration: underline;
+            align-items: center;
+        }
+        .p{
+            width:30%;
+            height:100%;
+            background-image: url("Director_image1_2023-5-20-12-32-22.jpg");
+            background-size: cover;
+        }
+        .i9{
+            font-size: 1.5rem;
+            color:#333;
+        }
+        .ii{
+            color:#000000; 
+        }
+        .eve{
+            height:450px;
+            width:100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(241, 234, 234);
+        }
+        .h1,.h2,.h3{
+            margin-left: 10px;
+            height: 80%;
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 1.5rem;
+        }
+        .main{
+            height:80%;
+            width:95%;
+            border: solid 1px black;
+            border-radius: 5px;
+            padding: 10px 10px 10px 10px;
+            background-color: white;
+        }
+        .phot{
+            width:100%;
+            height:70%;
+            background-image: url("SPARC_Brochure_2025-2-11-15-57-30.jpg");
+            background-size: cover;
+        }
+        .phot1{
+            width:100%;
+            height:70%;
+            background-image: url("ribbon_light_strip_2023-6-15-11-2-51.jpg");
+            background-size: cover;
+        }
+        .ji{
+            height:10%;
+            width:90%;
+            border-radius: 10px;
+            border: solid 2px red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color:red;
+        }
+        h1{
+            color:red;
+            font-size: 4rem;
+            text-decoration: none;
+            text-align: center;
+        }
+        .im{
+            height:200px;
+            width:100%;
+            background-color: aqua;
+            display: flex;
+        }
+        .i1,.i2,.i3,.i4{
+            width:25%;
+            height:100%;
+        }
+        .i1{
+            background-image: url("Children's_Day_2024-11-20-9-51-55.jpg");
+            background-size: cover;
+        }
+        .i2{
+            background-image: url("Bathukamma_2024-10-9-11-20-42.jpg");
+            background-size: cover;
+        }
+        .i3{
+            background-image: url("Medical_Camp_2025-1-6-11-15-22.jpg");
+            background-size: cover;
+        }
+        .i4{
+            background-image: url("Swachhata_2024-12-9-15-19-12.jpg");
+            background-size: cover;
+        }
+        footer{
+            height:50px;
+            display: flex;
+            width:100%;
+            background-color: rgb(13, 13, 130);
+            color:white;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <div class="div11">Welcome to National Institue of Technology Warangal!</div>
+        <div class="div12">
+            <div class="l1 l"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="l2 l"><i class="fa-brands fa-twitter"></i></div>
+            <div class="l3 l"><i class="fa-brands fa-youtube"></i></div>
+            <div class="l4 l"><i class="fa-brands fa-linkedin-in"></i></div>
+            <div class="l5 l"><i class="fa-brands fa-instagram"></i></div>
+            <div class="l6 l"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+            <div class="l7 l"><i class="fa-solid fa-magnifying-glass-minus"></i></div>
+            <div class="l8 l">Reset</div>
+        </div>
+    </div>
+    <div class="div2">
+        <div class="ph"></div>
+        <div class="gl"><i class="fa-solid fa-magnifying-glass"></i></div>
+    </div>
+    <div class="div3">
+        <div class="n1"><i class="fa-solid fa-house"></i></div>
+        <div class="n2">Institue <i class="fa-solid fa-caret-down"></i></div>
+        <div class="n3">Adminstration <i class="fa-solid fa-caret-down"></i></div>
+        <div class="n4">Academics <i class="fa-solid fa-caret-down"></i></div>
+        <div class="n5">R&D <i class="fa-solid fa-caret-down"></i></div>
+        <div class="n6">Students <i class="fa-solid fa-caret-down"></i></div>
+        <div class="n7">Alumni <i class="fa-solid fa-caret-down"></i></div>
+        <div class="n8"></div>
+        <div class="n9"></div>
+    </div>
+    <div class="sep"></div>
+    <div class="slide">
+        <button><div class="b1"><i class="fa-solid fa-chevron-left"></i></div></buttton>
+        <button><div class="b2"><i class="fa-solid fa-chevron-right"></i></div></button>
+    </div>
+    <br>
+    <div class="sep1"></div>
+    <br>
+    <marquee>
+        <pre><a href="#">Hello Nitw</a>                     <a href="#">Apply Now</a>                                      <a href="#">Declartion of results</a>                         <a href="#">Student Activities</a></pre>
+    </marquee>
+    <br>
+    <div class="sep1"></div>
+    <br>
+    <div class="dm">
+        <div class="m">Director Message</div>
+        <div class="p"></div>
+    </div>
+    <p class="i9">I am glad that I have been given an opportunity to serve as the Director of National Institute of Technology (NIT) Warangal-the oldest one in the bracket of first 17 NITs. It is an honour and privilege for me to lead this prestigious institute which has a rich history of its distinction in teaching, research and service to the nation. It is the first regional engineering college whose foundation stone has been laid by the former prime minister, Pandit Jawaharlal Nehru in the year 1959. Over a period of more than six decades, NIT Warangal has emerged as one of the leading institutions in engineering and technology. Warangal is the second largest city of the state of Telangana, Hyderabad being the first one which has several places of interest to visit. Some of the cultural heritages worth seeing in Warangal are Ramappa Temple, Bhadrakali Temple and thousand pillar temple. NIT Warangal is poised to create an ambience for nurturing innovation, incubation, creativity and excellence within its faculty and students towards achieving the sustainable development goals. We emphasize on student centric education with interdisciplinary research and development for the benefit of Industry and Society.NIT Warangal becomes a preferred institution for top rankers in Joint Entrance Examination (Main) because of its excellent teaching learning process, infrastructure that a student needs for effective learning. Our alumni have received distinguished recognitions in their chosen areas of profession and extend support towards sustainable development of the institute. I invite participation of all the stakeholders in the growth plan of the institute to steer it to the next level of success in all fronts.</p>
+    <p class="i9 ii">Professor Bidyadhar Subudhi<br>
+        Director</p>
+    <div class="eve">
+        <div class="h1">
+            <div class="tit"><b>Upcoming Events</b></div>
+            <br>
+            <div class="main">
+                <div class="phot"></div>
+                <br>    
+                    For More Information <a href="#">Click Here</a>
+                    
+            </div>
+        </div>
+        <div class="h2">
+            <div class="tit"><b>Awards and Recognition</b></div>
+            <br>
+            <div class="main">
+                Professor Jew das has been selected for the esteemed water Advanced Research and water Innovation (WARI) Fellowship program sponsred by the indo us science and technology Forum, the daughtery water institute of food, the university of nebraclon and the department of science and technology, Goverment of india
+            </div>
+        </div>
+        <div class="h3">
+            <div class="tit"><b>Seminars</b></div>
+            <br>
+            <div class="main">
+                <div class="ji">Ph.D.Viva.Voce Examination</div>
+                <br>
+                <b>Mr. Ramesh Daravath</b><br>
+investigations on Control Flexibilities of Grid integrated Solar Photovoltaic Energy Conversion System
+
+Supervisor: Prof. S. Srinivasa Rao
+Venue: Meeting Hall
+Electrical Engineering
+31-January-2025 | 3:30 PM
+            </div>
+        </div>
+    </div>
+    <div class="cl">
+        <h1>Campus Bulletin</h1>
+    </div>
+    <div class="im">
+        <div class="i1"></div>
+        <div class="i2"></div>
+        <div class="i3"></div>
+        <div class="i4"></div>
+    </div>
+    <br>
+    <footer>
+        Copyright © 2025 | Centre for Digital Infrastructure and Services (CDIS)
+    </footer>
+</body>
+</html>
